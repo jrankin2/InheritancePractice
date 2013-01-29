@@ -11,7 +11,7 @@ package myabstract;
 public class SalaryPlusBonusEmployee extends SalariedEmployee{
     private double bonusAmount;
 
-    public SalaryPlusBonusEmployee(double bonusAmount, double salaryWage, double daysVacation, double daysSick, String firstName, String lastName, String id, String department) {
+    public SalaryPlusBonusEmployee(double bonusAmount, double salaryWage, double daysVacation, double daysSick, String firstName, String lastName, int id, String department) {
         super(salaryWage, daysVacation, daysSick, firstName, lastName, id, department);
         this.bonusAmount = bonusAmount;
     }

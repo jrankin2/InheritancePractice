@@ -13,7 +13,7 @@ public class SalariedEmployee extends Employee {
     private double daysVacation;
     private double daysSick;
 
-    public SalariedEmployee(double salaryWage, double daysVacation, double daysSick, String firstName, String lastName, String id, String department) {
+    public SalariedEmployee(double salaryWage, double daysVacation, double daysSick, String firstName, String lastName, int id, String department) {
         super(firstName, lastName, id, department);
         this.salaryWage = salaryWage;
         this.daysVacation = daysVacation;

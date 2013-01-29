@@ -11,10 +11,10 @@ package myabstract;
 public abstract class Employee {
     private String firstName;
     private String lastName;
-    private String id;
+    private int id;
     private String department;
 
-    public Employee(String firstName, String lastName, String id, String department) {
+    public Employee(String firstName, String lastName, int id, String department) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
@@ -39,11 +39,11 @@ public abstract class Employee {
         this.lastName = lastName;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

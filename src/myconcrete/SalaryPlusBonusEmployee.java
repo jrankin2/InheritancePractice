@@ -11,7 +11,8 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
         this.bonusAmount = bonusAmount;
     }
     
-    public void payWithBonus(){
+    @Override
+    public void pay(){
         super.pay();
         System.out.println("SalaryPlusBonusEmployee paid a bonus: " + getBonusAmount());
     }
