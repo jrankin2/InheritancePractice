@@ -2,23 +2,24 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package myconcrete;
+
+package myabstract;
 
 /**
- *
  * @author Joe
  */
 public class HourlyEmployee extends Employee{
     private double hoursWorked;
     private double payRate;
 
-    public HourlyEmployee(double hoursWorked, double payRate, String lastName, String firstName, int id, String department) {
-        super(lastName, firstName, id, department);
+    public HourlyEmployee(double hoursWorked, double payRate, String firstName, String lastName, String id, String department) {
+        super(firstName, lastName, id, department);
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
     }
     
-    public void pay(){
+    @Override
+    public void pay() {
         System.out.println("HourlyEmployee paid: " + (getHoursWorked() * getPayRate()));
     }
 
@@ -37,4 +38,5 @@ public class HourlyEmployee extends Employee{
     public void setPayRate(double payRate) {
         this.payRate = payRate;
     }
+    
 }
